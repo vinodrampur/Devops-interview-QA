@@ -3,29 +3,55 @@
 Person A
 **********************
 1. role and responsibilities
-2. which automation tool ur using jenkins 
+2. which automation tool ur using 
+Ans: jenkins 
 3. tell me about groovy language why we are using that
+Ans: Groovy language can be used as a scripting language for the Java platform.
+     groovy is used as programming language and scripting language.
 4. tell me the steps to install a jenkins in ur linux machine
+Ans: Install Jenkins.
+     Step 1: Install Java Version 8.
+     Step 2: Install Apache Tomcat 9.
+     Step 3: Download Jenkins war File.
+     Step 4: Deploy Jenkins war File.
+     Step 5: Install Suggested Plugins.
 5. what is the supporting tools for jenkins 
+Ans: The SCM or Source Code Management tools Jenkins supports are SVN, Clearcase, CVS, Git, AccuRev, Perforce, RTC, Mercurial.
 6. how ur experiance with docker
 7. different between VM and container
+Ans: 
 8. ur having one container how many processor are running in that
 9. what is difference between docker deamon login and container login 
+Ans: 
 10. why we are using docker deamon
+Ans: The Docker daemon ( dockerd ) listens for Docker API requests and manages Docker objects such as images, containers, networks, and volumes.
 11. docker container life cycle
+Ans: creat--> run--> pause--> stop--> delete 
 12. docker compose file there is two containers one container is the data base container and one  is a application container you need to start the data base container first and then  to start the application container how you will do that
+Ans: 
 13. docker image u want to delete it how you will delete it
+Ans: docker rmi <imageName>
 14. what is k8s
+Ans: k8s is open source container orchestration tool used to deploy the application in the verious envirments. 
 15. what is kube scheduler
+Ans: it is used to scheduler the pods in the nodes. based on the resource requirement for running the application pods are scheduled in that node.
 16. what is the differnce between cluster ip and node port
+Ans: Cluster IP s used to communicate between the pods within the cluster
+     Nodeport is used to access the application from the oustside the cluster through the port number.
 17. what is ingress
+Ans: It will allows the traffic to the k8s services from outside the cluster by ceating the rules.
 18. what are the monitoring tools u have used in k8s
-19. port  of prametheous 
+Ans: Kubelet, prametheous
+19. port  of prametheous  
+Ans: port 9090
 20. what is the exporter name in k8s
+Ans: Node exporter--> The node exporter enables you to measure various machine resources such as memory, disk and CPU utilization.
 21. ur running  one application in linux server want to check the port number how you will check
+Ans: sudo netstat -tulpn | grep LISTEN
 22. what about ansible
+Ans: Ansible is an open-source automation tool, or platform, used for IT tasks such as configuration management, application deployment, intraservice orchestration, and provisioning.
 23. u have any experiance with scripting 
-
+Ans: Bash scripting
  1. count
  2. histogram
  3. summery
