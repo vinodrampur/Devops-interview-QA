@@ -28,30 +28,91 @@ providers "aws" {
 } 
 
 1.What is headless service,
+Ans: It is possible to create a service grouping that does not allocate an IP address or forward traffic, if there is a reason that you want to definitively control        what specific pods you connect and communicate with. 
+
 2. have one instance want to take that in diffrent region what will you do
+Ans: VPC peering
+
 3 how you take the s3 bucket storage data to from one region to another region
+Ans: 
+
 4. What are all the aws services you are using in your company?
 5. Have you worked on k8s?
+Yes
+
 6.Have you worked on terraform?
+Ans: yes
+
 7.Have you worked on ansible?
+Ans: Yes
+
 8.i am giving a git url and  how you deploy build on jenkins jobs
+Ans: first i will clone that application from the git, after by using the maven building tool i am goinh to build tha application.
+     after build completes in jenkins. 
+     
 9. u have artifactory packages and how you deploy in jenkins
+Ans: 
 10. replication controller and replica set
+
 11. probes 
+Ans: Liveness Probe and Readyness probe
+
 13. k8s services
+Ans: clusterIP
+     Nodeport
+     Load balancer
+     Headless services
+     
 14. how to check the logs in perticular container 
-13. which types of intsances have u used 
+Ans: docker logs <cintainerName>
+
+13. which types of intsances have u used
+Ans: general purpose and on demand 
+
 14. do u know about sticky notes in AWS 
+Ans:However, you can use the sticky session feature (also known as session affinity) to enable the load balancer to bind a user's session to a specific target. This ensures that all requests from the user during the session are sent to the same target. This feature is useful for servers that maintain state information in order to provide a continuous experience to clients. 
+
 15. s3 bucket storage classes
+Ans: s3 standard
+     infrequent access
+     standard infrequent access
+     S3 glacier
+     glacier deep archive
+     one-zone IA
+     
 16. u have experience on scripting? what type of script u have written?
+Ans: yes. bash scripting
+
 17. what all are the daily activity on k8s yoy will do?
+Ans: 
 19. git pull and git fetch and git rebase
+Ans: git pull --> Here bringing the files and dir from central repo to local repo
+                  Git pull = git fetch + git merge
+     git fetch --> Here the files and dir are stored in temporary space and reviewed by user if reuired merge it otherwise leaveit.
+     git rebase --> Here the commits of perticular branch is appending to the tip of other branch.
+     
 20. load balncer and types of load balancer in aws?
+Ans: Load balancer is used to devide the incoming traffic evenlly between target groups.
+     1. Classic load balancer
+     2. application load balancer
+     3. Network load balancer
+     4. Gate way load balancer
+     
 21. one of the my pod is in worker node is terminated what u will do?
+Ans: here we are going for cluster autoscaling.
+     when a node is terminated then automatically a new node will be deployed by using autoscaling
+     
 22. in jenkings job build to excute automatically when the code is push to git hub
 23. what is ssl in aws?
-24. after some days dode is pushes to git hub but job is not executed what is is the resion n how will you fix it?
+Ans: secure socket layer --> SSL/TLS certificates are used to secure network communications and establish the identity of websites over the Internet as well as resources on private networks. 
+24. after some days code is pushes to git hub but job is not executed what is is the resion n how will you fix it?
+Ans: in this we have to integrate git to the jenkins and perform webhook process again 
+
 25. create a instance in terraform with differnt regions
+Ans: 
+
 26. can you run a two application on single cluster
+Ans: yes. If multiple apps run in the same Kubernetes cluster, this means that these apps share the hardware, network, and operating system on the nodes of the cluster. 
 27. vpc components 
+Ans: IP addresses, Subnets, Internet gate way, natgate way, Elastic IP, 
 28. 
