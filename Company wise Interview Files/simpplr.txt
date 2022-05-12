@@ -3,17 +3,27 @@ Simpplr
 Introduce yourself. Explain your roles and responsibility
 
 Difference between deployment and statefulset
-
+Ans: Deployments are used for stateless applications, StatefulSets for stateful applications
+     The pods in a deployment are interchangeable, whereas the pods in a StatefulSet are not.
+     Deployments require a service to enable interaction with pods, while a headless service handles the pods’ network ID in StatefulSets.
+     
 Difference between service and headless service
-
+Ans: A Kubernetes service is a logical abstraction for a deployed group of pods in a cluster
+    A headless service is a service with a service IP but instead of load-balancing it will return the IPs of our associated Pods. 
+    
 How do you make sure you're application is running always in k8s cluster? 
-
+Ans: kubectl describe pod pod_name --namespace kube-system 
+     The Status field should be "Running" - any other status will indicate issues with the environment.
+     
 What do you know about pod disruption budget? 
 
 How you give access to k8s cluster? 
+Ans: go get k8s.io/client-go@kubernetes-<kubernetes-version-number>
 
 How does my ec2 instance access to k8s cluster? 
-
+Ans: via SSH
+     via AWS Session Manager
+     
 How does my application running in ec2 instance access to s3 service? 
 
 How to block incoming traffic for single ec2 instance? suppose I've 10 instances, I need to block for single instance
