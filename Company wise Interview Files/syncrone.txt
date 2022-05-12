@@ -1,6 +1,17 @@
 1.diff b/w scripted and declarative pipeline.
+Ans:   Scripted                          Declarative
+     1. It will give the error after     1. It will give the error message before executing the stages
+        completing all the stages             (Immidiate bud detection)
+        (time consuming)
+     2. We have to rebuild all stages    2. We can restart the perticular stage any time.
+        whenever we restart
+     3. In this we dont have stage skip  3. We have skipping the stages whenever we want
+        option
+        
 2.how to migrate a microservice from on premmisis to cloud.
+
 3.alternative way to run terraform init when there is no internet
+
 4.cpu utilization of a root-volume of a ec2-instance has reached 90% and i have incresed the root volumn but still i am getting alert message 
 how to take out this alert message.
 Ans: 1. Reboot your instance to return it to a healthy status.
