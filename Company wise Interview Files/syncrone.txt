@@ -9,8 +9,19 @@ Ans:   Scripted                          Declarative
         option
         
 2.how to migrate a microservice from on premmisis to cloud.
-
+Ans: Step 1 : Assessment
+                This is a primary phase where we need to assess if the application is “cloud-ready”. Here we need to check whether the application supports AWS-based                      services and if we need to make any implementation or architectural changes in order to execute application migration in AWS.
+     Step 2 : Implementation of Change
+                In this phase of cloud migration, the application needs to be updated and undergoes architectural and design changes.
+     Step 3 : Data Migration
+                    Once the implementation is ready, we first need to migrate the static files, dependencies, and database tables to the respective AWS services. This                     will include steps like migrating on-premise databases (MySQL, Oracle, Sybase) to Amazon RDS/Aurora, and migrating static files and dependencies                       to Amazon S3.
+     Step 4 : Application Migration
+                    This step includes actual migration of the application and deploying it on Amazon services like EC2/EBS along with allocating load balancers to                         them and maintaining their scalability.    
+     Step 5 : Test and Operate
+                    This is essentially a validation phase where we test the applications to ensure that they work seamlessly.
+                    
 3.alternative way to run terraform init when there is no internet
+Ans: Having a local provider mirror can avoid terraform init from accessing the internet to install providers, 
 
 4.cpu utilization of a root-volume of a ec2-instance has reached 90% and i have incresed the root volumn but still i am getting alert message 
 how to take out this alert message.
@@ -21,7 +32,9 @@ Ans: 1. Reboot your instance to return it to a healthy status.
 Ans: API service
 
 6.how to get/achieve DNS in K8S.
-Ans: 
+Ans: kubectl get service command we can see the kube-dns name
+                                 
 7. which CI/CD tool you are familier with 
 Ans:Jenkins
+
 8. tell me about youself
