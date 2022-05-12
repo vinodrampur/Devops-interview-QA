@@ -3,6 +3,24 @@ PWC 1st round
 1. what is ur roles and responsibilities
 2. do you have experience with terraform n ansible
 3. how to enable the state locking feature of terraform in aws
+Ans: provider "aws" {
+   region = "us-east-2"
+}
+resource "aws_dynamodb_table" "dynamodb-terraform-lock" {
+   name = "terraform-lock"
+   hash_key = "LockID"
+   read_capacity = 20
+   write_capacity = 20
+
+   attribute {
+      name = "LockID"
+      type = "S"
+   }
+
+   tags {
+     Name = "Terraform Lock Table"
+   }
+}
 4. how it will work statelock file 
 5. u have created infrastructure in aws console later ur organization is ask you to integrate those infrastructure in to terraforn structure
 6.  when the state file will create very first time means after terraform in it or after terraform plan 
