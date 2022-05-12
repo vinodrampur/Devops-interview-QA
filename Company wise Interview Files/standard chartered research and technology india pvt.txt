@@ -1,13 +1,40 @@
 standard chartered research and technology india pvt. ltd====on==02/05/2022
 
 1. difference b/w eks and fargate
+Ans:Amazon Elastic Kubernetes Service (Amazon EKS) is a managed Kubernetes service that makes it easy for you to run Kubernetes on AWS and on-premises.
+    AWS Fargate is a serverless, pay-as-you-go compute engine that lets you focus on building applications without managing servers.
+    
 2. explain auto scalling
+Ans:Autoscaling is monitor ypur application automatically and adject the capacity of machine steady, predictable performance at the lowest possible cost.
+   
 3. how will you deploy ur application with zero down time
+Ams: A Blue-Green deployment is a relatively simple way to achieve zero downtime deployments by creating a new, separate environment for the new version being deployed        and switching traffic into it.
+
 4. how to set static ip in k8 cluster
+Ans: Allocate static IPs under Networking > External IP addresses,
+
 5. how to setup jenkins jobs
+Ans:  Step 1) Login to Jenkins. ...
+      Step 2) Create New Item. ...
+      Step 3) Enter Item details. ...
+      Step 4) Enter Project details. ...
+      Step 5) Enter repository URL. ...
+      Step 6) Tweak the settings. ...
+      Step 8) Build Source code. ...
+      Step 9) Check the status.
+      
 6. how restart jenkins manually
+Ans: By using below commands we can restart the jenkins manually
+     (Jenkins_url)/restart 
+     (Jenkin_url)/safeRestart
+     
 7. difference b/w git clone and pull
+Ans: Git clone is used call the files and directory from central repo to local repo for the first time.
+     Git pull is used to call the files and directories from central repo to local repo for second time. 
+     
 8. how to clone git project to jenkins jobs
+Ans: First we have to New job --> Freestyle job--> select the SCM git--> got to perticular git repo--> copy URL--> paste in to SCM git in jenkins--> give git                credentials--> save --> apply
+
 9. what is ansible galaxy
 10. command to build image from running container
 11. how to migrate instence from one region to another
