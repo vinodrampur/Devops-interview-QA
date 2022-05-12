@@ -3,7 +3,14 @@
 3.alternative way to run terraform init when there is no internet
 4.cpu utilization of a root-volume of a ec2-instance has reached 90% and i have incresed the root volumn but still i am getting alert message 
 how to take out this alert message.
+Ans: 1. Reboot your instance to return it to a healthy status.
+     2. Consider changing your instance to an instance type that meets your CPU requirements.
+     
 5. there is one service running on all nodes and master name that.
+Ans: API service
+
 6.how to get/achieve DNS in K8S.
+Ans: 
 7. which CI/CD tool you are familier with 
+Ans:Jenkins
 8. tell me about youself
