@@ -36,13 +36,25 @@ Ans: Git clone is used call the files and directory from central repo to local r
 Ans: First we have to New job --> Freestyle job--> select the SCM git--> got to perticular git repo--> copy URL--> paste in to SCM git in jenkins--> give git                credentials--> save --> apply
 
 9. what is ansible galaxy
+Ans: Ansible Galaxy refers to where users can share roles, and to a command line tool for installing, creating and managing roles.
+
 10. command to build image from running container
+Ans: docker commit <containerName>
+
 11. how to migrate instence from one region to another
+Ans: It is not possible to move one instance from one region to another directly,
+     but we can migrate the instance by creating AMI if instance from one region and select the AMI in another region, AZ's, VPC while launching new instance.
+     
 12. how to display last line of a file in linux
+Ans: by using tail command we can display the last line
+     tail -1
 13. tell me about ur self
+Ans:
 14. you have knowledge in kafka?
+Ans: No
 15. i have 3 containers who to login to a container?
+Ans: 
 16. what is spot instence and on-demand instence?
-
-
+ Ans: Spot Instances enable you to request unused EC2 instances at steep discounts, you can lower your Amazon EC2 costs significantly. 
+      On-Demand Instances, you pay for compute capacity by the second with no long-term commitments.
 
