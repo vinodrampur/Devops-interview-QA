@@ -16,6 +16,7 @@ Ans: kubectl describe pod pod_name --namespace kube-system
      The Status field should be "Running" - any other status will indicate issues with the environment.
      
 What do you know about pod disruption budget? 
+Ans: A Pod Disruption Budget (PDB) allows you to limit the disruption to your application when its pods need to be rescheduled for some reason such as upgrades or            routine maintenance work on the Kubernetes nodes. 
 
 How you give access to k8s cluster? 
 Ans: go get k8s.io/client-go@kubernetes-<kubernetes-version-number>
@@ -27,7 +28,10 @@ Ans: via SSH
 How does my application running in ec2 instance access to s3 service? 
 
 How to block incoming traffic for single ec2 instance? suppose I've 10 instances, I need to block for single instance
+Ans: use a network Access Control List (ACL) or security group rules in your VPC.
 
 Write script to display square of the number from 1 to 10
-
+Ans: #! /bin/bash 
+     SQ=`expr $1 "*" $1` 
+     echo "$1^2 = $SQ" 
 Some other scenario based questions
