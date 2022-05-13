@@ -24,17 +24,33 @@ resource "aws_dynamodb_table" "dynamodb-terraform-lock" {
 4. how it will work statelock file 
 5. u have created infrastructure in aws console later ur organization is ask you to integrate those infrastructure in to terraforn structure
 6.  when the state file will create very first time means after terraform in it or after terraform plan 
+Ans: even after terraform init and plan command is run terraform.tfstate file will not create 
+     it will create when we terraform apply
+     
 7. what will be in there in state file
+Ans: statefile includes the configurations of infrastructure what we are implimenting.
+     ex: ec2, s3,security group, vpc etc...
+     
 8.  in ansible variable which can override others on highest priority
-9. how do you encrypt sensitive data in ansible  
+9. how do you encrypt sensitive data in ansible
+Ans: Ansible Vault is a feature that allows users to encrypt values and data structures within Ansible projects. This provides the ability to secure any sensitive data      that is necessary to successfully run Ansible plays but should not be publicly visible, like passwords or private keys.
+
 10. why ansible is much popular with compaire to other tools
 ANS:  ansible is agentless, with other tools we need to install agent in all machine 
+
 11. how ansible work . how install or tell me ansible configuration
+Ans: Ansible works by connecting to your nodes and pushing out small programs, called modules to them.
+     This is the brain and the heart of Ansible, the file that governs the behavior of all interactions performed by the control node. In Ansible's case that default        configuration file is (ansible. cfg) located in /etc/ansible/ansible.cfg
+     
 12. how to do the passordless connection configartion 
 13. master slave configuration 
 14. did you configure window slave 
 15. have you heard about JNLP agent java network luanch protocal
 16. i have a 10 slaves and my perticular pipeline job i want to run in 'a' slave machine how you will configure 
+Ans: agent{
+     label = label1, label2.......label10
+     we are going to mention the agent label in the pipeline when we configure cicd pipeline.
+     
 17. diffrence between git pull and git fetch
 18. do you have used python 
 18. any other progarmming u know
