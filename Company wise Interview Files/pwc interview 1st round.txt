@@ -23,6 +23,8 @@ resource "aws_dynamodb_table" "dynamodb-terraform-lock" {
 }
 4. how it will work statelock file 
 5. u have created infrastructure in aws console later ur organization is ask you to integrate those infrastructure in to terraforn structure
+Ans: by impoting the existing infrastructure to terraform structure.
+
 6.  when the state file will create very first time means after terraform in it or after terraform plan 
 Ans: even after terraform init and plan command is run terraform.tfstate file will not create 
      it will create when we terraform apply
