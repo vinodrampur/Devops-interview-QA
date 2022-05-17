@@ -85,6 +85,7 @@ Ans: yes. bash scripting
 
 17. what all are the daily activity on k8s yoy will do?
 Ans: 
+     
 19. git pull and git fetch and git rebase
 Ans: git pull --> Here bringing the files and dir from central repo to local repo
                   Git pull = git fetch + git merge
@@ -103,13 +104,20 @@ Ans: here we are going for cluster autoscaling.
      when a node is terminated then automatically a new node will be deployed by using autoscaling
      
 22. in jenkings job build to excute automatically when the code is push to git hub
+Ans: We are setting up webhook option. in jenkins configuration we tic the option githook then go to the 
+github--> setting of perticular repository--> take link of jeniks page--> add when pushing new comming--> automatically execute the job in jenkins.
+
 23. what is ssl in aws?
 Ans: secure socket layer --> SSL/TLS certificates are used to secure network communications and establish the identity of websites over the Internet as well as resources on private networks. 
 24. after some days code is pushes to git hub but job is not executed what is is the resion n how will you fix it?
 Ans: in this we have to integrate git to the jenkins and perform webhook process again 
 
 25. create a instance in terraform with differnt regions
-Ans: 
+Ans: provider "aws" {
+        region = "region name"
+        access_key = ""
+        secret_key = ""
+}
 
 26. can you run a two application on single cluster
 Ans: yes. If multiple apps run in the same Kubernetes cluster, this means that these apps share the hardware, network, and operating system on the nodes of the cluster. 
