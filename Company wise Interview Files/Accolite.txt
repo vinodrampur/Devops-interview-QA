@@ -7,9 +7,11 @@ Accolite
 3.Can we secure Jenkins? How?
      
 4. K8s Architecture
+Ans: 
 
 5. what is kubectl?
-    
+Ans: The Kubernetes command-line tool, kubectl, allows you to run commands against Kubernetes clusters.
+
 6. What is EC2? What are placement groups?
     https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html
 	
@@ -33,13 +35,16 @@ amount of data, at any time, from anywhere on the web.
 12. Loadbalancer and types of Loadbalancers
 
 13. Dynamodb, Route 53
-
- Amazon DynamoDB is a fully managed, serverless, key-value NoSQL database designed to run high-performance applications at any scale.
- DynamoDB offers built-in security, continuous backups, automated multi-Region replication, in-memory caching, and data export tools.     
- 
+Ans: Amazon DynamoDB is a fully managed, serverless, key-value NoSQL database designed to run high-performance applications at any scale.
+     DynamoDB offers built-in security, continuous backups, automated multi-Region replication, in-memory caching, and data export tools.     
+    Route 53: Route 53 is a domain name service which points domain name to IP address and domain name to doamine name.
+        
+    
 14. What is API gateway? 
+Ans:  An API gateway acts as a reverse proxy to accept all application programming interface (API) calls, aggregate the various services required to fulfill them, and return the appropriate result.
 
 15. What is Cloudwatch? list different Metrics of Cloudwatch
+    Ans: it is a monitoring tool used to monitor the aws resources.
     EC2---
     1. CPUCreditBalance --IN EC2
 	2. CPUUtilization --IN EC2
@@ -47,41 +52,55 @@ amount of data, at any time, from anywhere on the web.
     4. BucketSizeBytes--IN S3
     5. NumberOfObjects--IN S3
 	6. Diskread -- IN EC2
-
 	
 16. What is lambda? What is SNS?
-  lamda:   Used to run the code with out thinking of other code it's a server less service.
-	SNS:  It provides a low-cost infrastructure for the mass delivery of messages, predominantly to mobile 
-                                                                                                           users   
-																										   
+Ans: lamda: It is a serverless function used in aws, here we are not thinking about the server to run our application just place our code and aws will take care about             what configuration reuired to run our application.
+     SNS: it is simple notification service to communicate bet person to application and application to application.   
+															
 17. What is Autocaling? Types of autoscaling ?
-        Used to monitor the applications which automates the capacity of the application study,stabilized and predictable performence
-		Horizontal
-		vertical
-		
-		
+Ans: Used to monitor the applications which automates the capacity of the application study,stabilized and predictable performence
+     Horizontal: By adding addition server to distribute the load evenly bet the servers when traffic is more.
+     vertical: Increasing capacity of the exsting server to control the traffic. 
 		
 
 Accolite digital
 1) Introduce yourself
 
-2) $#
+2) $#--> Number of argument passed to the script.
  
-3) $? 
+3) $?--> status of last executed command
 
-4) $@
+4) $@--> All the arguments passed to the script but stored in array format
  
-5) what is jenkins pipeline
+5) what is jenkins pipeline?
+Ans: This is type of job we got in jenkins where all the configuration of the job is done through code.
+     Ther eare two types 1. scripted pipeline 
+                         2. Declarative pipeline
 
 6) what r the stages of declerative piple line 
-          
+Ans: Declarative pipelines break down stages into individual stages that can contain multiple steps.
+     Execute this Pipeline or any of its stages, on any available agent.
+	1. Defines the "Build" stage.
+	2. Perform some steps related to the "Build" stage.
+	3. Defines the "Test" stage.
+	4. Perform some steps related to the "Test" stage.
+	5. Defines the "Deploy" stage.
+	6. Perform some steps related to the "Deploy" stage.
 7) what ci tool u r using 
+Ans: Jenkins
       
 8) apart form jenkins? 
-    circle ci, Team city,GitLab CI
+    bamboo, circle ci, Team city,GitLab CI
+    
 9) write groovy script for deplyoing to k8s 
-   
+ Ans: 
+ 
 10) write shellscript to it should username and reflect user id 
+Ans: #!/bin/bash
+     user="$(ID -u -n)"
+     UID= "$(ID -u)"
+     echo "user name $user"
+     echo "user name: ID $UID"
       
 11) copy and add 
 12) how do u pass environment variable in cli
