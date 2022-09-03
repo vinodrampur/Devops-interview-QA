@@ -21,6 +21,7 @@ Ans: The SCM or Source Code Management tools Jenkins supports are SVN, Clearcase
 7. different between VM and container
 Ans: 
 8. ur having one container how many processor are running in that
+Ans: One of these principles is that there should just be one process running in a container. That is to say, a Docker container should have just one program running inside it.
 9. what is difference between docker deamon login and container login 
 Ans: 
 10. why we are using docker deamon
@@ -41,7 +42,7 @@ Ans: Cluster IP s used to communicate between the pods within the cluster
 17. what is ingress
 Ans: It will allows the traffic to the k8s services from outside the cluster by ceating the rules.
 18. what are the monitoring tools u have used in k8s
-Ans: Kubelet, prametheous
+Ans: Kubelet, prametheous, ELK, NewRelic
 19. port  of prametheous  
 Ans: port 9090
 20. what is the exporter name in k8s
