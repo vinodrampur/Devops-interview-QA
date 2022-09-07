@@ -3,6 +3,12 @@
 3. if i start a new project then will do a jenkins configuration
 4. wirte a simple groovy script of any pipeline job
 5. i want to deploy that container image on AWS 
+Ans: 1. Setup ECS in aws 
+     2. Create container and task definition
+     3. Define your service
+     4. Configure your cluster
+     5. Launch and view your resources
+     6. Open the sample application
 6. write a terraform script pull that image and deploy that image to aws
 7. write a terraform script to create VPC  and attach to an already running instance to on aws
 8. what is ur experience on terraform
@@ -13,15 +19,35 @@
 13.  are u work with aws inspectore
 14. do you have written a lambda code
 15. what is cloudformation 
+Ans: AWS CloudFormation is a service that gives developers and businesses an easy way to create a collection of related AWS and third-party resources, and provision     and manage them in an orderly and predictable fashion.
 16. cloudwatch
+Ans: Cloudwatch is an monitoring tool to used to monitor the aws resources Ex:CPU utilization, memory usage
 17. i want to intergrate cloud watch to my on prime monitoring tool datadoc how u will do
 18. handler in ansible
+Ans: In a ansible when we install any tools by using the playbook when we start the service repeatedly then we have to use handlers to restart the service, before we have to notify. 
 19. roles in ansible
+Ans: Ansible role is used to run multiple playbooks at a time.
 20. i have 200 machines of centos ubuntu redhat i don't know them which is centos ubuntu and redhat all machines need to installed with nginx so how can i do that
+Ans:
+     ---
+     - hosts: all
+       become: true
+       user: ansible
+       tasks:
+       - name: install nginx in debian
+         command: apt-get -y install nginx
+         when: ansible_OS_family == "Debian"
+       - name: install nginx in redhat
+         command: sudo yum install -y nginx
+         when: ansible_OS_family == "RedHAt"
+         
 21. what is ansible galaxy
 22. in k8s waht is the name space
+ans: Namespace will create vertual cluster within the cluster, means for isolation of the environments in th K8s
 23. what is git stash
+Ans: When a user working on a file, if He got any urgent work in other branch at that time we have to add file to staging area and use git stash command then that file is move to temp area and not visible in other branch. After that move to the branch where you have work and fix that problem in that branch and comeback to the previous brach where you are working. Then run the command git stash pop and that file is come to the staging area and git reset HEAD then it will come to working area and start working on the file. 
 24. what is git merge
+Ans: When a developer push the code to perticular file then create merge request and add the commit to that file by using git merge command
 
 
 
