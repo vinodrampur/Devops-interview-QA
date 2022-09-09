@@ -24,15 +24,24 @@ amount of data, at any time, from anywhere on the web.
        
 9. EBS types, S3 storage classes
 
-  1. Solid state drives (SSD) 2. Hard disk drives (HDD)  3.Previous generation
+  1. General purpose (SSD) 2. Provisionized IOPS (HDD)  3. Throughput Optimized
   
-  https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volume-types.html       
+  s3 storage classes
+  1. Standard  2. Infrequent Access 3. Standard IA 4. Glacier 5. Glacier deep archive 6. Reduce redundancy
   
 10.VPC and its components
-       
+Ans: VPC is isolated zone in the aws where we implement aws resources in vertual private network
+1. IP addresses 2. Subnets 3. Internet gateway 4. Route table 5. Natgateway 
+
 11. VPC peering
+Ans: VPC Network Peering enables you to connect VPC networks so that workloads in different VPC networks can communicate internally
 
 12. Loadbalancer and types of Loadbalancers
+Ans: Load balancing refers to efficiently distributing incoming network traffic across a group of backend servers or target groups
+1. Classical loadbalancer
+2. Application loadbalancer
+3. Network loadbalancer
+4. Gateway loadbalancer
 
 13. Dynamodb, Route 53
 Ans: Amazon DynamoDB is a fully managed, serverless, key-value NoSQL database designed to run high-performance applications at any scale.
